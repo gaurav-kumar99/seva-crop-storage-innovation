@@ -10,6 +10,12 @@ from database import Base, engine, get_db
 
 Base.metadata.create_all(bind=engine)
 
+# Render ke free plan par shell nahi milta. SEED_ON_STARTUP=1 set karne par sample data
+# (seed.py) pehli baar khud load ho jata hai. Script idempotent hai, dobara chalane se
+# duplicate nahi banta. Asli data aane ke baad is variable ko hata dena.
+if os.getenv("SEED_ON_STARTUP") == "1":
+    import seed  # noqa: F401
+
 app = FastAPI(title="Seva Crop Storage API")
 
 # Frontend alag domain/port par chalega, isliye CORS on hai.
