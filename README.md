@@ -92,9 +92,10 @@ Additional technologies such as APIs, IoT or AI/ML will be considered only if th
 | Member   | Responsibility                        |
 | -------- | ------------------------------------- |
 | Naim Molla | Frontend Developer |
-| Gaurav Kumar | Backend Developer |
+| Gaurav Kumar | Backend Developer + Farmer Survey + Existing solutions research|
 | Tanmoy Sarkar | AI/ML Developer |
 | Sanjeev Singh | Database + Testing + Integration |
+| Nainika Das | Research + Gap identification |
 
 ## 📂 Project Structure
 
